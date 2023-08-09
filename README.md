@@ -21,37 +21,37 @@ Sistem üyelere mesaj iletebilmeli.
 Sistem 7/24 %1'den az bir down ile ayakta olmalıdır. 
 
 # API Design
-/users
+/users                      (tüm üyeler)
 
-/users/{userId}
+/users/{userId}             (belirli bir üye)
 
 /users/{userId}/profile
 
 #
-/posts
+/posts                       (tüm postlar)
 
-/posts?user={userId}
+/posts?user={userId}         (belirli bir üyenin tüm postları)
 
-/posts/{postId}
+/posts/{postId}              (belirli bir post)
 
-
-#
-/comments
-
-/comments?postId={postId}
-
-/comments?user={userId}
-
-comments/{commentId}
 
 #
-/likes
+/comments                    (Tüm yorumlar)
 
-/likes?postId={postId}
+/comments?postId={postId}    (Belirli bir postun tüm yorumları)
 
-/likes?user={userId}
+/comments?user={userId}      (Belirli bir üyenin tüm yorumları)
 
-likes/{likeId}
+comments/{commentId}         (Belirli bir yorum)
+
+#
+/likes                       (Tüm beğeniler)
+
+/likes?postId={postId}       (Belirli bir postun tüm beğenileri)
+
+/likes?user={userId}         (belirli bir üyenin tüm beğenileri)
+
+likes/{likeId}               (Belirli bir beğeni)
 
 
 # Backend Teknolojileri
