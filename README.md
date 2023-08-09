@@ -20,6 +20,39 @@ Sistem üyelere mesaj iletebilmeli.
 
 Sistem 7/24 %1'den az bir down ile ayakta olmalıdır. 
 
+# API Design
+/users
+
+/users/{userId}
+
+/users/{userId}/profile
+
+
+/posts
+
+/posts?user={userId}
+
+/posts/{postId}
+
+
+/comments
+
+/comments?postId={postId}
+
+/comments?user={userId}
+
+comments/{commentId}
+
+
+/likes
+
+/likes?postId={postId}
+
+/likes?user={userId}
+
+likes/{likeId}
+
+
 # Backend Teknolojileri
 Spring Boot
 
