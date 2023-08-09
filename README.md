@@ -27,7 +27,7 @@ Sistem 7/24 %1'den az bir down ile ayakta olmalıdır.
 
 /users/{userId}/profile
 
-
+#
 /posts
 
 /posts?user={userId}
@@ -35,6 +35,7 @@ Sistem 7/24 %1'den az bir down ile ayakta olmalıdır.
 /posts/{postId}
 
 
+#
 /comments
 
 /comments?postId={postId}
@@ -43,7 +44,7 @@ Sistem 7/24 %1'den az bir down ile ayakta olmalıdır.
 
 comments/{commentId}
 
-
+#
 /likes
 
 /likes?postId={postId}
